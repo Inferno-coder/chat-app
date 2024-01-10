@@ -16,7 +16,8 @@ export default function Welcome() {
       <h1>
         Welcome, <span>{userName}!</span>
       </h1>
-      <h3>Please select a chat to Start messaging.</h3>
+      <h3 className="chat">Please select a chat to Start messaging.</h3>
+      <h3 >Else please wait for some users to join</h3>
     </Container>
   );
 }
@@ -32,5 +33,11 @@ const Container = styled.div`
   }
   span {
     color: #4e0eff;
+  }
+  .chat{
+    margin-top:10px;
+    font-size: 30px;
+    color:blue;
+    margin-bottom:10px
   }
 `;
